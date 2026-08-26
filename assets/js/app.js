@@ -7,8 +7,8 @@ var CONFIG = {
   // (diferente dos 4 grupos usados no aquecimento manual da primeira live).
   WHATSAPP_GROUP_LINK: "https://chat.whatsapp.com/PLACEHOLDER",
 
-  // Endpoint que recebe os dados do formulário (n8n).
-  FORM_ENDPOINT: "https://n8neditor.leticiakratka.shop/webhook-test/live-semanal",
+  // Endpoint que recebe os dados do formulário (n8n, produção).
+  FORM_ENDPOINT: "https://n8nwebhook.leticiakratka.shop/webhook/live-semanal",
 
   // Worker de tracking server-side (Meta CAPI), o mesmo já usado no Caixa Livre e na
   // Consultoria — não é exclusivo dessa página, não precisa criar/trocar por turma.
