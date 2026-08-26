@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TZ7859WF');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula ao vivo · Como fazer sobrar 20% da renda todo mês</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Carrega a fonte sem bloquear a primeira renderização: entra como "print" (não
+       aplicável na hora) e vira "all" só depois de carregar. Fallback via <noscript>
+       pra quem tem JS desligado. Mesmo truque usado no site real da Leticia. -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400&family=Mulish:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400&family=Mulish:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZ7859WF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ===== BARRA DO TOPO: DATA EM DESTAQUE ===== -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <span class="topbar__pulse" aria-hidden="true"></span>
+    <span class="topbar__label">Próxima aula ao vivo</span>
+    <span class="topbar__date" data-webinar-date>Em breve</span>
+    <span class="topbar__sep" aria-hidden="true">·</span>
+    <span class="topbar__tag">Google Meet · vagas limitadas · sem replay</span>
+  </div>
+</div>
+
+<section class="hero hero--centered" id="top">
+  <div class="container hero__center">
+    <p class="kicker">Aula ao vivo e gratuita · Google Meet<span>©</span></p>
+    <h1 class="hero__title">
+      Como fazer sobrar <strong>20% da renda</strong> todo mês, <em>sem cortar o que você gosta</em>
+    </h1>
+
+    <button type="button" class="btn btn--apply btn--lg hero__cta" data-open-modal>
+      Garantir minha vaga agora
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </button>
+
+    <div class="webinar-countdown webinar-countdown--center">
+      <p class="webinar-countdown__label">A aula ao vivo começa em</p>
+      <div id="countdown" aria-live="polite"></div>
+    </div>
+
+    <ul class="hero__bullets">
+      <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Onde o seu dinheiro está vazando sem você perceber</li>
+      <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Como fazer a sobra de 20% acontecer sem depender de força de vontade</li>
+      <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Como manter o que você gosta de fazer com o seu dinheiro, sem culpa</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== FAIXA DE INFORMAÇÕES ===== -->
+<section class="infostrip">
+  <div class="container infostrip__grid">
+    <div class="infostrip__item">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <div><b>Data e horário</b><span data-webinar-date>Em breve</span></div>
+    </div>
+    <div class="infostrip__item">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      <div><b>Formato</b><span>Ao vivo no Google Meet</span></div>
+    </div>
+    <div class="infostrip__item">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+      <!-- PLACEHOLDER: número real de vagas, se a Leticia quiser limitar (o Bruno usa "100"; aqui ficou genérico) -->
+      <div><b>Vagas</b><span>Limitadas</span></div>
+    </div>
+    <div class="infostrip__item infostrip__item--alert">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="4.9" y1="4.9" x2="19.1" y2="19.1"/></svg>
+      <div><b>Replay</b><span>Não terá replay</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== SOBRE A INSTRUTORA ====== -->
+<section class="sobre-instrutora">
+  <div class="container">
+    <div class="sobre-instrutora__grid">
+      <div class="sobre-instrutora__cover">
+        <!-- Salvar a foto real em assets/img/leticia-kratka.jpg -->
+        <img src="assets/img/leticia-kratka.jpg" alt="Leticia Kratka" width="440" height="659" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <div class="sobre-instrutora__copy">
+        <p class="kicker">Quem conduz a aula<span>©</span></p>
+        <h2 class="section-title" style="text-align:left">O método de <em>Leticia Kratka</em> pra fazer sobrar 20% da renda todo mês</h2>
+        <p><strong>Leticia Kratka</strong> ensina organização financeira sem dieta de gastos. Criadora do Método Travessia, ela mostra pra quem a acompanha como sobrar dinheiro todo mês sem abrir mão do que dá prazer. Na aula ao vivo, ela mostra o método passo a passo.</p>
+        <!-- PLACEHOLDER: revisar/ajustar a bio acima com números reais se a Leticia tiver algo
+             confirmado (quantidade de pessoas atendidas, tempo de mercado etc). Evitar número chutado. -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== PILARES ====== -->
+<section class="pilares">
+  <div class="container">
+    <h2 class="section-title">Na aula ao vivo, você vai entender <em>como aplicar o método</em>:</h2>
+    <span class="badge-mode">
+      <span class="badge-mode__dot" aria-hidden="true"></span>
+      Aula ao vivo · Google Meet
+    </span>
+
+    <div class="pilares__grid">
+      <article class="pilar-card">
+        <div class="pilar-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="12"/><path d="M16 10v6l4 4"/></svg>
+        </div>
+        <h3>Onde o dinheiro está vazando</h3>
+        <p>O primeiro passo é enxergar pra onde o dinheiro está indo de verdade, sem culpa e sem precisar cortar o que você gosta de fazer.</p>
+      </article>
+      <article class="pilar-card">
+        <div class="pilar-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 24h24"/><path d="M8 24V14l6 4 6-8 6 6v8"/></svg>
+        </div>
+        <h3>Como automatizar a sobra</h3>
+        <p>Um jeito de organizar sua renda pra que os 20% sobrem sozinhos todo mês, sem depender de força de vontade ou de ficar controlando gasto por gasto.</p>
+      </article>
+      <article class="pilar-card">
+        <div class="pilar-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4v24"/><path d="M22 8c0-2-3-3-6-3s-6 1-6 4 3 3.5 6 4 6 1 6 4-3 4-6 4-6-1-6-3"/></svg>
+        </div>
+        <h3>Manter o que te dá prazer</h3>
+        <p>O método não pede pra você abrir mão do que importa. A ideia é sobrar dinheiro em volta do que você já gosta de fazer, não apesar disso.</p>
+      </article>
+    </div>
+    <!-- PLACEHOLDER: os 3 cards acima descrevem a lógica geral do método. Se a Leticia tiver
+         nomes/etapas próprias (como o "planilha + IA + 30 min" do Caixa Livre), trocar pelos
+         termos reais dela. -->
+  </div>
+</section>
+
+<!-- ====== QUEM JÁ PASSOU PELO MÉTODO — carrossel de prints reais ====== -->
+<!-- Os 4 arquivos abaixo precisam existir em assets/img/depoimentos/ com esses nomes exatos.
+     São os prints reais que o Rualison mandou (conversas de acompanhamento de clientes da
+     Travessia/Portal Express). A lista de <img> aparece duas vezes de propósito — é o truque
+     do "loop infinito": a animação anda a largura de uma volta e, quando reinicia do zero,
+     como a segunda cópia é idêntica à primeira, ninguém percebe o corte. -->
+<section class="depoimentos-carousel-section">
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow">Quem já passou pelo método</p>
+      <h2 class="section-title">Resultados de quem participou e aplicou o método</h2>
+    </header>
+    <div class="depoimentos-carousel">
+      <div class="depoimentos-carousel__track">
+        <img src="assets/img/depoimentos/depoimento-1.jpg" alt="Print de acompanhamento: patrimônio líquido aumentou 63%, R$ 82.446,85 em 122 dias, com dívidas quitadas e negociadas." width="408" height="760" loading="lazy" decoding="async">
+        <img src="assets/img/depoimentos/depoimento-2.jpg" alt="Print de feedback: cliente quitou dívida de R$ 12 mil em 12 meses de Travessia, reduziu 50% dos gastos no cartão e formou reserva de emergência pessoal e da empresa." width="350" height="760" loading="lazy" decoding="async">
+        <img src="assets/img/depoimentos/depoimento-3.jpg" alt="Print de acompanhamento: patrimônio líquido aumentou R$ 13.413,62 em 63 dias, saindo de saldo negativo de R$ 7 mil pra positivo de R$ 6 mil." width="407" height="760" loading="lazy" decoding="async">
+        <img src="assets/img/depoimentos/depoimento-4.jpg" alt="Print de depoimento: casal comprou carro novo e já deixou o IPTU e o IPVA do ano guardados, resultado do método." width="415" height="760" loading="lazy" decoding="async">
+        <!-- cópia pro loop contínuo, aria-hidden pra não duplicar leitura de tela -->
+        <img src="assets/img/depoimentos/depoimento-1.jpg" alt="" aria-hidden="true" width="408" height="760" loading="lazy" decoding="async">
+        <img src="assets/img/depoimentos/depoimento-2.jpg" alt="" aria-hidden="true" width="350" height="760" loading="lazy" decoding="async">
+        <img src="assets/img/depoimentos/depoimento-3.jpg" alt="" aria-hidden="true" width="407" height="760" loading="lazy" decoding="async">
+        <img src="assets/img/depoimentos/depoimento-4.jpg" alt="" aria-hidden="true" width="415" height="760" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== ESTATÍSTICAS ====== -->
+<section class="premiacao">
+  <div class="container">
+    <h2 class="section-title" style="text-align:left">+R$ 10 milhões faturados de <em>patrimônio gerenciado</em></h2>
+    <div class="premiacao__chips">
+      <span class="chip">+500 famílias atendidas individualmente</span>
+      <span class="chip">+4.000 alunos em todo o mundo</span>
+      <span class="chip">Top 50 Influenciadores · InfoMoney 2025</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ====== FAQ ====== -->
+<section class="faq">
+  <div class="container container--narrow">
+    <header class="section-head">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="section-title">Perguntas <em>frequentes</em></h2>
+      <p class="section-head__sub">As dúvidas mais comuns sobre a aula.</p>
+    </header>
+
+    <div class="faq__list">
+      <details class="faq__item">
+        <summary>A aula é gratuita?</summary>
+        <div class="faq__answer"><p>Sim, não tem nenhum custo pra participar. É uma aula ao vivo, sem pegadinha de venda no meio.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>Vai ter replay?</summary>
+        <div class="faq__answer"><p>Não. As vagas são limitadas e a aula é só ao vivo, sem gravação disponibilizada depois. Se não der pra entrar nesse horário, o melhor é aguardar a próxima turma.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>Quando e onde acontece?</summary>
+        <div class="faq__answer"><p><span data-webinar-date>Em breve</span>, ao vivo no Google Meet. O link da sala chega pelo grupo de WhatsApp depois que você se inscreve.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>Como recebo o link da aula?</summary>
+        <div class="faq__answer"><p>Assim que você se inscreve, é direcionada pra entrar no grupo de WhatsApp da aula. É por lá que mandamos o link da sala, a confirmação e os lembretes.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>Preciso já ter algum controle financeiro antes?</summary>
+        <div class="faq__answer"><p>Não. A aula é desenhada tanto pra quem já tenta se organizar e não consegue, quanto pra quem nunca parou pra olhar pra isso. Você sai com clareza do que fazer, independente de onde está começando.</p></div>
+      </details>
+      <!-- PLACEHOLDER: adicionar mais perguntas reais conforme forem surgindo -->
+    </div>
+  </div>
+</section>
+
+<!-- ====== CTA FINAL ====== -->
+<section class="cta-final cta-final--team">
+  <!-- PLACEHOLDER: imagem de fundo (ex: foto da Leticia/equipe), como o team-panel.jpg do Bruno -->
+  <div class="cta-final__overlay" aria-hidden="true"></div>
+  <div class="container container--narrow">
+    <header class="section-head section-head--center">
+      <p class="eyebrow">Próximo passo</p>
+      <h2 class="section-title">Garanta sua vaga na <em>próxima aula ao vivo</em></h2>
+      <p class="section-head__sub">As vagas são limitadas e não tem replay. Preenche e recebe o link do grupo.</p>
+    </header>
+    <div class="cta-chips">
+      <span class="cta-chip"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span data-webinar-date>Em breve</span></span>
+      <span class="cta-chip"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/></svg>Google Meet</span>
+      <span class="cta-chip"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>Vagas limitadas</span>
+      <span class="cta-chip cta-chip--alert"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.9" y1="4.9" x2="19.1" y2="19.1"/></svg>Sem replay</span>
+    </div>
+    <div class="cta-final__action">
+      <button type="button" class="btn btn--apply btn--lg" data-open-modal>
+        Quero minha vaga
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer footer--compact">
+  <div class="container footer__inner">
+    <p class="footer__legal">Leticia Kratka © 2026 <!-- PLACEHOLDER: CNPJ, se ela quiser exibir --></p>
+    <p class="footer__contact">
+      <a href="#"><!-- PLACEHOLDER: e-mail de contato --></a>
+      <span aria-hidden="true">·</span>
+      <!-- PLACEHOLDER: linkar pra política real, se existir uma pronta (ex: sites/lck-privacidade/) -->
+      <a href="#" target="_blank" rel="noopener">Termos &amp; Privacidade</a>
+    </p>
+  </div>
+</footer>
+
+<!-- ====== POP-UP DE INSCRIÇÃO ====== -->
+<div class="modal" id="form-modal" hidden>
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal__close" type="button" data-close aria-label="Fechar">&times;</button>
+    <form class="hero-form" id="apply" novalidate>
+      <header class="hero-form__head">
+        <span class="hero-form__badge">INSCRIÇÃO GRATUITA</span>
+        <h2 id="modal-title">Garanta sua vaga na aula</h2>
+        <p>As vagas são limitadas e <strong>sem replay</strong>. Preencha pra receber o link do grupo.</p>
+      </header>
+
+      <div class="form-group">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name" required>
+        <span class="error-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" required>
+        <span class="error-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">WhatsApp</label>
+        <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" autocomplete="tel" required>
+        <span class="error-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="instagram">Qual seu @ do Instagram?</label>
+        <input type="text" id="instagram" name="instagram" placeholder="@seuperfil" autocomplete="off" required>
+        <span class="error-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="renda">Qual a sua faixa de Renda Mensal Líquida?</label>
+        <select id="renda" name="renda" required>
+          <option value="" disabled selected>Selecione uma opção</option>
+          <option value="ate-5k">Até R$ 5.000</option>
+          <option value="5k-7k">De R$ 5.000 a R$ 7.000</option>
+          <option value="7k-12k">De R$ 7.000 a R$ 12.000</option>
+          <option value="12k-18k">De R$ 12.000 a R$ 18.000</option>
+          <option value="18k-50k">De R$ 18.000 a R$ 50.000</option>
+          <option value="acima-50k">Acima de R$ 50.000</option>
+        </select>
+        <span class="error-message"></span>
+      </div>
+
+      <input type="hidden" name="website" value="" tabindex="-1" autocomplete="off">
+
+      <button type="submit" class="btn btn--apply btn--lg btn-submit">
+        Confirmar inscrição
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </button>
+      <p class="form-disclaimer">Respeitamos sua privacidade. Nunca compartilhamos seus dados.</p>
+    </form>
+  </div>
+</div>
+
+<!-- ===== NOTIFICAÇÃO DE INSCRIÇÃO FLUTUANTE (prova social) ===== -->
+<div class="sale-notif" id="sale-notification">
+  <div style="display:flex; align-items:center; gap:12px; padding:14px 18px;">
+    <div style="width:36px; height:36px; border-radius:50%; background:var(--gold); flex-shrink:0; display:flex; align-items:center; justify-content:center; font-weight:700; color:#fff;" data-sale-avatar>?</div>
+    <div style="color:var(--dark); font-size:13.5px;"><strong data-sale-name>Nome</strong> acabou de garantir a vaga</div>
+  </div>
+</div>
+
+
+<!-- ===== CONFIG DA PRÓXIMA AULA — altere só o bloco WEBINAR a cada turma ===== -->
+<script>
+(function(){
+  var WEBINAR = {
+    iso:   '2026-09-01T19:00:00-03:00',
+    label: 'Terça-feira, 01 de setembro · 19h (horário de Brasília)'
+  };
+  document.querySelectorAll('[data-webinar-date]').forEach(function(el){ el.textContent = WEBINAR.label; });
+  var target = new Date(WEBINAR.iso).getTime();
+  var cd = document.getElementById('countdown');
+  function pad(n){ return String(n).padStart(2,'0'); }
+  function grp(v,l){ return '<span class="cd-grp"><strong>'+pad(v)+'</strong><span>'+l+'</span></span>'; }
+  function tick(){
+    var diff = target - Date.now();
+    if(diff <= 0){ if(cd){ cd.innerHTML = '<span class="cd-live">Estamos ao vivo agora</span>'; } return; }
+    var d=Math.floor(diff/864e5), h=Math.floor(diff%864e5/36e5), m=Math.floor(diff%36e5/6e4), s=Math.floor(diff%6e4/1e3);
+    if(cd){ cd.innerHTML = grp(d,'dias')+grp(h,'horas')+grp(m,'min')+grp(s,'seg'); }
+  }
+  if(cd){ tick(); setInterval(tick,1000); }
+})();
+</script>
+
+<!-- ===== POP-UP (abrir/fechar) ===== -->
+<script>
+(function(){
+  var modal = document.getElementById('form-modal');
+  if(!modal) return;
+  var lastFocus = null;
+  function open(){
+    lastFocus = document.activeElement;
+    modal.hidden = false;
+    document.body.classList.add('modal-open');
+    var f = modal.querySelector('input,select,textarea');
+    if(f){ setTimeout(function(){ f.focus(); }, 60); }
+  }
+  function close(){
+    modal.hidden = true;
+    document.body.classList.remove('modal-open');
+    if(lastFocus && lastFocus.focus){ lastFocus.focus(); }
+  }
+  document.querySelectorAll('[data-open-modal]').forEach(function(b){
+    b.addEventListener('click', function(e){ e.preventDefault(); open(); });
+  });
+  modal.querySelectorAll('[data-close]').forEach(function(b){
+    b.addEventListener('click', close);
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && !modal.hidden){ close(); }
+  });
+})();
+</script>
+
+<script src="assets/js/app.js?v=1" defer></script>
+</body>
+</html>
