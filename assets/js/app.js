@@ -3,9 +3,7 @@
 // ============================================================
 var CONFIG = {
   // Link do grupo de WhatsApp pra onde o formulário redireciona após o envio.
-  // PLACEHOLDER: definir qual grupo recebe as inscrições da página evergreen
-  // (diferente dos 4 grupos usados no aquecimento manual da primeira live).
-  WHATSAPP_GROUP_LINK: "https://chat.whatsapp.com/PLACEHOLDER",
+  WHATSAPP_GROUP_LINK: "https://chat.whatsapp.com/GiXnrzAWZAn0YgfvDXWz1q",
 
   // Endpoint que recebe os dados do formulário (n8n, produção).
   FORM_ENDPOINT: "https://n8nwebhook.leticiakratka.shop/webhook/live-semanal",
