@@ -67,12 +67,12 @@ h1, h2, h3 { font-family: var(--font-serif); font-weight: 400; line-height: 1.2;
 .btn--lg { font-size: 18px; padding: 16px 32px; }
 
 /* ===================== TOPBAR ===================== */
-.topbar { background: rgba(180,153,79,0.08); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 12px 0; font-size: 13.5px; }
-.topbar__inner { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; color: var(--text); }
-.topbar__pulse { width: 8px; height: 8px; border-radius: 50%; background: #c0392b; animation: pulse 1.2s infinite; flex-shrink: 0; }
-.topbar__label { color: var(--brown); font-weight: 600; }
-.topbar__date { font-weight: 700; color: var(--dark); }
-.topbar__sep { opacity: .4; }
+.topbar { background: var(--brown); padding: 14px 0; font-size: 13.5px; text-align: center; }
+.topbar__inner { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #fff; }
+.topbar__row { display: flex; align-items: center; justify-content: center; gap: 8px; }
+.topbar__pulse { width: 8px; height: 8px; border-radius: 50%; background: #ff6b5b; animation: pulse 1.2s infinite; flex-shrink: 0; }
+.topbar__label { color: var(--cream); font-weight: 600; }
+.topbar__date { font-weight: 700; color: #fff; font-size: 14.5px; }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
 
 /* ===================== HERO ===================== */

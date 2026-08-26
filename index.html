@@ -30,11 +30,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ===== BARRA DO TOPO: DATA EM DESTAQUE ===== -->
 <div class="topbar">
   <div class="container topbar__inner">
-    <span class="topbar__pulse" aria-hidden="true"></span>
-    <span class="topbar__label">Próxima aula ao vivo</span>
-    <span class="topbar__date" data-webinar-date>Em breve</span>
-    <span class="topbar__sep" aria-hidden="true">·</span>
-    <span class="topbar__tag">Google Meet · vagas limitadas · sem replay</span>
+    <div class="topbar__row">
+      <span class="topbar__pulse" aria-hidden="true"></span>
+      <span class="topbar__label">Próxima aula ao vivo</span>
+    </div>
+    <span class="topbar__date" data-webinar-date-short>Em breve</span>
   </div>
 </div>
 
@@ -331,10 +331,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 (function(){
   var WEBINAR = {
-    iso:   '2026-09-01T19:00:00-03:00',
-    label: 'Terça-feira, 01 de setembro · 19h (horário de Brasília)'
+    iso:        '2026-09-01T19:00:00-03:00',
+    label:      'Terça-feira, 01 de setembro · 19h (horário de Brasília)',
+    labelShort: 'Terça-feira, 01 de setembro · 19h' // usado só na faixa do topo
   };
   document.querySelectorAll('[data-webinar-date]').forEach(function(el){ el.textContent = WEBINAR.label; });
+  document.querySelectorAll('[data-webinar-date-short]').forEach(function(el){ el.textContent = WEBINAR.labelShort; });
   var target = new Date(WEBINAR.iso).getTime();
   var cd = document.getElementById('countdown');
   function pad(n){ return String(n).padStart(2,'0'); }
