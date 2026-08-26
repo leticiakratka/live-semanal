@@ -223,7 +223,16 @@ h1, h2, h3 { font-family: var(--font-serif); font-weight: 400; line-height: 1.2;
 .form-group { margin-bottom: 16px; }
 .form-group label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; color: var(--dark); }
 .form-group input, .form-group select {
-  width: 100%; padding: 12px 14px; border-radius: var(--radius-sm); border: 1px solid #ccc; font-size: 15px; font-family: inherit;
+  width: 100%; padding: 12px 14px; border-radius: var(--radius-sm); border: 1px solid #ccc; font-size: 15px;
+  font-family: inherit; color: var(--dark); background: #fff;
+  appearance: none; -webkit-appearance: none; outline: none;
+}
+.form-group select { cursor: pointer; padding-right: 40px; }
+.select-wrapper { position: relative; }
+.select-wrapper::after {
+  content: ""; position: absolute; right: 16px; top: 50%; transform: translateY(-50%);
+  width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent;
+  border-top: 6px solid var(--gold); pointer-events: none;
 }
 .error-message { display: block; color: #c0392b; font-size: 12.5px; margin-top: 4px; }
 .btn-submit { width: 100%; margin-top: 8px; }
