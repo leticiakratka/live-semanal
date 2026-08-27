@@ -235,6 +235,7 @@ h1, h2, h3 { font-family: var(--font-serif); font-weight: 400; line-height: 1.2;
   border-top: 6px solid var(--gold); pointer-events: none;
 }
 .error-message { display: block; color: #c0392b; font-size: 12.5px; margin-top: 4px; }
+.form-group.error input, .form-group.error select { border-color: #c0392b; }
 .btn-submit { width: 100%; margin-top: 8px; }
 .form-disclaimer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 14px; }
 

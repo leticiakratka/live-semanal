@@ -160,11 +160,56 @@ function iniciarFormulario() {
   var form = document.getElementById("apply");
   if (!form) return;
 
+  // Campos obrigatórios (todos, menos o Instagram). O <form novalidate> tira a checagem
+  // automática do navegador no submit, então validamos isso aqui na mão.
+  var camposObrigatorios = [form.nome, form.email, form.phone, form.renda];
+
+  function limparErro(campo) {
+    var grupo = campo.closest(".form-group");
+    if (!grupo) return;
+    grupo.classList.remove("error");
+    var msg = grupo.querySelector(".error-message");
+    if (msg) msg.textContent = "";
+  }
+
+  function mensagemErro(campo) {
+    if (campo.validity.valueMissing) {
+      return campo.tagName === "SELECT" ? "Selecione uma opção." : "Preenche esse campo pra continuar.";
+    }
+    if (campo.validity.typeMismatch) return "Digita um e-mail válido.";
+    return campo.validationMessage || "Confere esse campo.";
+  }
+
+  function validarFormulario() {
+    var primeiroInvalido = null;
+    camposObrigatorios.forEach(function (campo) {
+      limparErro(campo);
+      if (!campo.checkValidity()) {
+        var grupo = campo.closest(".form-group");
+        if (grupo) {
+          grupo.classList.add("error");
+          var msg = grupo.querySelector(".error-message");
+          if (msg) msg.textContent = mensagemErro(campo);
+        }
+        if (!primeiroInvalido) primeiroInvalido = campo;
+      }
+    });
+    if (primeiroInvalido) primeiroInvalido.focus();
+    return !primeiroInvalido;
+  }
+
+  camposObrigatorios.forEach(function (campo) {
+    campo.addEventListener("input", function () { limparErro(campo); });
+    campo.addEventListener("change", function () { limparErro(campo); });
+  });
+
   form.addEventListener("submit", async function (e) {
     e.preventDefault();
 
     // Honeypot anti-spam: se o campo escondido "website" veio preenchido, é bot.
     if (form.website && form.website.value) return;
+
+    if (!validarFormulario()) return;
 
     var submitBtn = form.querySelector('button[type="submit"]');
     if (submitBtn) submitBtn.disabled = true; // evita duplo envio/duplo evento de Lead
